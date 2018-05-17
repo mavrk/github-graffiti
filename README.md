@@ -8,7 +8,8 @@ So, there is a friend of mine and she had her birthday. I noticed that she has n
 ### How to get started ?
 
 **Step-1** Clone this repository
-					`git clone https://github.com/mavrk/github-graffiti`
+`git clone https://github.com/mavrk/github-graffiti`
+
 **Step-2** Open the GUI editor
 ```
 cd github-graffiti
