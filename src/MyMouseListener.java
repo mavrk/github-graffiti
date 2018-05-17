@@ -30,19 +30,22 @@ public class MyMouseListener extends MouseAdapter {
             SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             try {
                 Date inputDate = sdf.parse(inputDateString);
-                Calendar cal = Calendar.getInstance();
+                Calendar cal = Calendar.getInstance(), calOrig = Calendar.getInstance();
                 cal.setTime(inputDate);
                 cal.set(Calendar.YEAR, cal.get(Calendar.YEAR) - 1);
                 while (cal.get(Calendar.DAY_OF_WEEK) != Calendar.SUNDAY) {
                     cal.set(Calendar.DAY_OF_MONTH, cal.get(Calendar.DAY_OF_MONTH) - 1);
                 }
+                calOrig.setTime(cal.getTime());
+                System.out.println(sdf.format(cal.getTime()));
                 MyColor[][] myColors = colorGrid.getMyColors();
                 PrintWriter writer = new PrintWriter("dates.txt", "UTF-8");
                 for (int col = 0; col < 52; col++) {
                     for (int row = 0; row < 7; row++) {
                         if (myColors[row][col].getShortName() != 0) {
-                            cal.add(Calendar.DAY_OF_MONTH, col * 7 + row);
+                            cal.add(Calendar.DAY_OF_MONTH, col*7 + row);
                             writer.println(sdf.format(cal.getTime()) + "/" + myColors[row][col].getShortName());
+                            cal.setTime(calOrig.getTime());
                         }
                     }
                 }
