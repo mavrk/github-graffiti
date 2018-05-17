@@ -1,11 +1,11 @@
 # GitHub Graffiti Creator
 
-##Inspiration
+## Inspiration
 So, there is a friend of mine and she had her birthday. I noticed that she has not created a github user account yet, so I went ahead to create one for her. And wrote this application, to design and create a special birthday message for her. 
 
 ![The birthday message](https://github.com/mavrk/github-graffiti/blob/master/images/demo.png "The birthday message")
 
-###How to get started ?
+### How to get started ?
 
 **Step-1** Clone this repository
 					`git clone https://github.com/mavrk/github-graffiti`
