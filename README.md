@@ -6,8 +6,8 @@ So, there is a friend of mine and she had her birthday. I noticed that she has n
 ![The birthday message](https://github.com/mavrk/github-graffiti/blob/master/images/demo.png "The birthday message")
 
 ### What do you need ?
-Java runtime environment (https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-A bash terminal (https://gitforwindows.org/ will work like a charm for Windows users)
+1. Java runtime environment (https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+2. A bash terminal (https://gitforwindows.org/ will work like a charm for Windows users)
 
 ### How to get started ?
 
